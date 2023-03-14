@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Navbar -->
+        <nav>
+            <a href="index.html">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <div class="navLinks" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- Center header text -->
+        <div class="textBox">
+            <h1>Wordl's biggest university</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt atque cum sed dolorum officiis
+                <br>
+                necessitatibus fugiat, veniam ipsum!
+            </p>
+            <!-- Center header button -->
+            <a href="#" class="hero-btn">Visit us to know more</a>
+        </div>
+    </header>
+    <!-- Courses -->
+    <section class="course">
+        <h1>Corurses we offer</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        <div class="row">
+            <div class="coures-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae atque perferendis vel
+                    perspiciatis, voluptates veniam magni, impedit maxime recusandae dicta quae fuga est pariatur.
+                    Consectetur aut eaque non tempora ducimus?</p>
+            </div>
+            <div class="coures-col">
+                <h3>Degree</h3>
+                <p>Sint, ex! Saepe error impedit provident ducimus ipsa odit, voluptatibus, facilis, laudantium magni
+                    libero cum molestias asperiores reprehenderit officiis nisi. Officia accusamus iusto, autem
+                    reprehenderit ea hic sunt nemo eum.</p>
+            </div>
+            <div class="coures-col">
+                <h3>Post gurditon</h3>
+                <p>Aspernatur laudantium error deleniti vero ea rerum, mollitia minus et, voluptates quod ad aliquam eum
+                    exercitationem voluptas voluptatibus doloribus deserunt illo sequi assumenda expedita consequatur.
+                    Maiores omnis minima accusantium quae!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Image and city -->
+    <section class="cumpus">
+        <h1>Our global cumps</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+        <div class="row">
+            <div class="cumpus-col">
+                <img src="./images/london.png" alt="">
+                <div class="layer">
+                    <h3>London</h3>
+                </div>
+            </div>
+            <div class="cumpus-col">
+                <img src="./images/newyork.png" alt="">
+                <div class="layer">
+                    <h3>Newyork</h3>
+                </div>
+            </div>
+            <div class="cumpus-col">
+                <img src="./images/washington.png" alt="">
+                <div class="layer">
+                    <h3>Washington</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facilities">
+        <h1>Our facilities</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur elit.</p>
+        <div class="row">
+            <div class="facilitiesCol">
+                <img src="./images/library.png" alt="">
+                <h3>World class library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sapiente!</p>
+            </div>
+            <div class="facilitiesCol">
+                <img src="./images/basketball.png" alt="">
+                <h3>Largest play ground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis sit est iusto!</p>
+            </div>
+            <div class="facilitiesCol">
+                <img src="./images/cafeteria.png" alt="">
+                <h3>Tasty and healthy food</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea distinctio eius non.</p>
+            </div>
+        </div>
+    </section>
+    <section class="comment">
+        <h1>What Our Student Says</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="row">
+            <div class="commentCol">
+                <img src="./images/user1.jpg" alt="">
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempore iste odit facere
+                        dolores ullam ipsa aliquid. Qui necessitatibus sit quidem harum illo ad cum dolorum voluptas!
+                        Alias, dolorum numquam?</p>
+                    <h3>Dra ibrahim</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="commentCol">
+                <img src="./images/user2.jpg" alt="">
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempore iste odit facere
+                        dolores ullam ipsa aliquid. Qui necessitatibus sit quidem harum illo ad cum dolorum voluptas!
+                        Alias, dolorum numquam?</p>
+                    <h3>Mohammed jabbar</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Java script code for Navbar link -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
